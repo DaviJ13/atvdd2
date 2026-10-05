@@ -1,10 +1,17 @@
 const calcularDesconto = require("../src/desconto");
 
 const preco = 100;
-const resultado = calcularDesconto(preco, "eletronico");
 
-if (resultado !== 10) {
-    throw new Error("Teste falhou");
+const descontoEletronico = calcularDesconto(preco, "eletronico");
+
+if (descontoEletronico !== 10) {
+    throw new Error("Teste de eletrônico falhou");
 }
 
-console.log("Teste passou");
+const descontoLivro = calcularDesconto(preco, "livro");
+
+if (descontoLivro !== 15) {
+    throw new Error("Teste de livro falhou");
+}
+
+console.log("Todos os testes passaram");

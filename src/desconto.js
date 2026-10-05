@@ -5,6 +5,10 @@ const calcularDesconto = (preco, categoria) => {
         desconto = preco * 0.10;
     }
 
+    if (categoria === "livro") {
+        desconto = preco * 0.15;
+    }
+
     return desconto;
 };
 
