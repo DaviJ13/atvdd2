@@ -1,0 +1,4 @@
+Projeto utilizado na comparação entre Git, SVN e Perforce.
+
+Cenário atual:
+A - Criação e submissão inicial.
